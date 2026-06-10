@@ -10,3 +10,9 @@
 2026-06-09	16:01:52	INFO	Running task#03 'Update Notification'.
 2026-06-09	16:01:56	INFO	Task> UpdateNotification end
 2026-06-09	16:01:56	INFO	Successfully finished task#03 in 3.87 (net 3.87) seconds.
+2026-06-10	16:01:37	INFO	Laufende Aufgabe#02 'Session GC'.
+2026-06-10	16:01:37	INFO	Aufgabe> SessionGC end
+2026-06-10	16:01:37	INFO	Erfolgreich abgeschlossene Aufgabe#02 in 0.02 (net 0.03) Sekunden.
+2026-06-10	16:02:01	INFO	Laufende Aufgabe#03 'Update Notification'.
+2026-06-10	16:02:02	INFO	Aufgabe> UpdateNotification end
+2026-06-10	16:02:02	INFO	Erfolgreich abgeschlossene Aufgabe#03 in 1.22 (net 1.22) Sekunden.
