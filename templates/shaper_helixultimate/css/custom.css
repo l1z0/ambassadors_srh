@@ -1,0 +1,210 @@
+:root {
+  --club-bg-dark: #671c38;
+  --club-bg-light: #e8fbff;
+  --club-purple: #bd5cff;
+  --club-pink: #ff64d8;
+  --club-yellow: #ffe600;
+  --club-text: #111;
+  --club-white: #fff;
+  --club-radius: 22px;
+}
+
+/* Page base */
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #e9fbff 45%, #ffacf2 100%);
+}
+
+/* Main content wrapper */
+#sp-main-body {
+  padding: 40px 0;
+}
+
+/* Hero section */
+.club-hero {
+  background: var(--club-bg-dark);
+  color: var(--club-white);
+  border-radius: 28px;
+  padding: 50px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.club-hero h1 {
+  font-size: clamp(42px, 8vw, 92px);
+  line-height: 0.9;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.club-hero .accent {
+  color: var(--club-purple);
+}
+
+.club-hero p {
+  max-width: 520px;
+  font-size: 18px;
+}
+
+/* Buttons */
+.btn,
+.btn-primary,
+.fabrikAddButton,
+.button {
+  background: linear-gradient(135deg, var(--club-purple), var(--club-pink)) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 12px 22px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+
+/* Fabrik list container */
+.fabrikDataContainer {
+  background: transparent;
+}
+
+/* Card-like Fabrik rows */
+.fabrikDataContainer table {
+  border-collapse: separate;
+  border-spacing: 0 18px;
+  width: 100%;
+}
+
+.fabrikDataContainer thead {
+  display: none;
+}
+
+.fabrikDataContainer tr {
+  background: #fff;
+  border-radius: var(--club-radius);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.fabrikDataContainer td {
+  padding: 22px;
+  border: none !important;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.fabrikDataContainer td:first-child {
+  border-radius: var(--club-radius) 0 0 var(--club-radius);
+}
+
+.fabrikDataContainer td:last-child {
+  border-radius: 0 var(--club-radius) var(--club-radius) 0;
+}
+
+/* Images inside Fabrik */
+.fabrikDataContainer img,
+.fabrikDetails img {
+  border-radius: 18px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Event / club titles */
+.fabrikDataContainer td a,
+.fabrikElement a {
+  font-weight: 900;
+  color: var(--club-text);
+  text-decoration: none;
+}
+
+/* Detail pages */
+.fabrikDetails {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 28px;
+  padding: 44px;
+  box-shadow: 0 18px 50px rgba(26, 10, 83, 0.1);
+}
+
+.fabrikLabel {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: #555;
+}
+
+.fabrikElement {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* Statistic blocks */
+.club-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin: 40px 0;
+}
+
+.club-stat {
+  background: var(--club-purple);
+  color: #fff;
+  padding: 28px;
+  border-radius: 24px;
+  font-weight: 900;
+}
+
+.club-stat strong {
+  display: block;
+  font-size: 42px;
+}
+
+/* Section headings */
+.club-section-title,
+.page-header h1,
+h1 {
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+/* Dark section */
+.club-dark-section {
+  background: #450a2f;
+  color: white;
+  padding: 50px;
+  border-radius: 28px;
+  margin: 50px 0;
+}
+
+.club-dark-section h2 {
+  color: white;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .club-hero,
+  .club-dark-section,
+  .fabrikDetails {
+    padding: 28px;
+    border-radius: 22px;
+  }
+
+  .fabrikDataContainer table,
+  .fabrikDataContainer tbody,
+  .fabrikDataContainer tr,
+  .fabrikDataContainer td {
+    display: block;
+    width: 100%;
+  }
+
+  .fabrikDataContainer tr {
+    margin-bottom: 22px;
+  }
+
+  .fabrikDataContainer td {
+    padding: 14px 20px;
+  }
+}

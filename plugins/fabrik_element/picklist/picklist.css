@@ -1,0 +1,30 @@
+.picklist{
+	list-style:none;
+}
+
+.picklist li, li.picklist{
+	background-color:#FFFFFF;
+	margin:3px;
+	padding:5px !important;
+	cursor:move;
+}
+
+li.emptyplicklist{
+	background-color:transparent;
+	cursor:pointer;
+}
+/* Touch-friendly sizing */
+.picklist.list-group-item {
+    min-height: 44px;
+    padding: 12px 16px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Prevent text selection on lists */
+.fromList,
+.toList {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
